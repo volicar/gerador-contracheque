@@ -21,7 +21,7 @@ export default function Home() {
     img.src = watermarkImageSrc;
 
     img.onload = () => {
-      // Adicione a marca d'água com uma opacidade fixa de 0.5 (50%)
+      // Adiciona a marca d'água com uma opacidade fixa de 0.5 (50%)
       const fixedOpacity = 0.5; // Opacidade fixa de 50%
       doc.addImage(img, 'PNG', 15, 40, 180, 160, undefined, 'FAST', fixedOpacity);
 
